@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Maker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+
+    <div class="container">
+        <h1>Decision Maker 🎯</h1>
+        <div class="input-group">
+            <input type="text" id="optionInput" placeholder="Enter an option...">
+            <button id="addOptionBtn" class="btn btn-primary">Add Option</button>
+        </div>
+        <ul id="optionsList" class="options-list">
+        </ul>
+        <div class="flex flex-col sm:flex-row justify-center gap-4 mt-4">
+            <button id="decideBtn" class="btn btn-secondary flex-1">Make Decision</button>
+            <button id="clearAllBtn" class="btn btn-danger flex-1">Clear All</button>
+        </div>
+
+        <div id="resultDisplay" class="result-display">
+            Your decision will appear here!
+        </div>
+        <div id="messageBox" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+            <div class="bg-white p-6 rounded-lg shadow-xl max-w-sm w-full text-center">
+                <p id="messageText" class="text-lg font-semibold text-gray-800 mb-4"></p>
+                <button id="messageBoxCloseBtn" class="btn btn-ok px-6 py-2">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="credits-footer">
+        <div class="credits-content">
+            <p>Designed and Developed by: Sai Siddhardha Netha</p>
+            <p>Connect with me:
+                <a href="https://www.linkedin.com/in/sai-siddhardha-ashala" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/SiddhardhaNetha" target="_blank">GitHub</a> |
+                <a href="mailto:siddhardhanetha@gmail.com">Email</a>
+            </p>
+            <p class="copyright">© 2025 Siddhardh All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
